@@ -60,10 +60,36 @@ O projeto **Tarefa** é um sistema simples de gerenciamento de tarefas, implemen
 - PostgreSQL
 - Git
 
-### Instalação e Execução
+### Instalação 
 
 1. Clone o repositório:
 
 ```bash
 git clone https://github.com/seu-usuario/tarefa-backend.git
 cd tarefa
+```
+--------------
+### Execução
+1. Para baixar o node_modules
+```
+yarn
+```
+2. Subir o Banco de Dados em segundo plano
+```
+docker compose up -d
+```
+3. Rodar a migrations no banco para a criação de tabela Tarefas 
+```
+yarn typeorm migration:run
+```
+4. Fazer um build para a inicialitazção do back-end
+```
+yarn build
+```
+5. Subir o back-end
+```
+yarn start
+```
+
+
+

@@ -2,9 +2,9 @@
   "type": "postgres",
   "port": 5432,
   "host": "localhost",
-  "username": "db_avoe_user",
+  "username": "db_tarefa_user",
   "password": "Pass102030",
-  "database": "db_avoe", 
+  "database": "db_tarefa", 
   "migrations": [
     "./src/shared/infra/typeorm/migrations/*.ts"
   ],
