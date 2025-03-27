@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "17a46c8e-8d67-4b6b-87df-a1400ad8613e",
+		"name": "Tarefas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32401329"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"Nome da Tarefa\",\r\n\t\"description\": \"Descrição da Tarefa\",\r\n\t\"isInactive\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/tarefas",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"tarefas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"search\": \"\",\r\n\t\"rowsPerPage\": 10,\r\n\t\"page\": 0,\r\n\t\"columnOrder\": [\"ASC\", \"ASC\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/tarefas/list",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"tarefas",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Select",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"search\": \"\",\r\n\t\"rowsPerPage\": 10,\r\n\t\"page\": 0,\r\n\t\"columnOrder\": [\"ASC\", \"ASC\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/tarefas/select",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"tarefas",
+						"select"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"search\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/tarefas/count",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"tarefas",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"search\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/tarefas/fbefe751-06cc-4b8e-b371-988176e327cf",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"tarefas",
+						"fbefe751-06cc-4b8e-b371-988176e327cf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"id\": \"fbefe751-06cc-4b8e-b371-988176e327cf\",\r\n\t\"name\": \"Nome de Tarefa 2\",\r\n\t\"description\": \"Descrição de Tarefa 2\",\r\n\t\"isInactive\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/tarefas",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"tarefas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"id\": \"fbefe751-06cc-4b8e-b371-988176e327cf\",\r\n\t\"name\": \"Nome de Tarefa 2\",\r\n\t\"description\": \"Descrição de Tarefa 2\",\r\n\t\"isInactive\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/tarefas/fbefe751-06cc-4b8e-b371-988176e327cf",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"tarefas",
+						"fbefe751-06cc-4b8e-b371-988176e327cf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

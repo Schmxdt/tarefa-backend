@@ -1,0 +1,18 @@
+{
+  "type": "postgres",
+  "port": 5432,
+  "host": "localhost",
+  "username": "db_avoe_user",
+  "password": "Pass102030",
+  "database": "db_avoe", 
+  "migrations": [
+    "./src/shared/infra/typeorm/migrations/*.ts"
+  ],
+  "entities": [
+    "./src/modules/**/entities/*.ts",
+    "./dist/modules/**/entities/*.js"
+  ],
+  "cli": {
+    "migrationsDir": "./src/shared/infra/typeorm/migrations"
+  }
+}
