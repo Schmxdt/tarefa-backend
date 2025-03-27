@@ -56,7 +56,7 @@ O projeto **Tarefa** é um sistema simples de gerenciamento de tarefas, implemen
 
 ### Pré-requisitos
 
-- Node.js (versão 14 ou superior)
+- Node.js (versão v20.10.0)
 - PostgreSQL
 - Git
 
